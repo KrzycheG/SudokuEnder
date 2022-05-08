@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         board()
         Reset.setOnClickListener{board()}
     }
+    var win = 0;
+    var lose = 0;
     private fun board() {
         val d = Random.nextInt(1..9);
         val e = Random.nextInt(1..9);
